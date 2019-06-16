@@ -1,6 +1,6 @@
 # pandas-note
 
-##读取文件
+## 读取文件
 ```python
 frame=pd.read_excel(r'C:\Users\wrath\Desktop\成交单报表.xls',skiprows=1,dtype={'流量编号':object})
 frame=pd.read_csv(f,dtype={'编号':object,'推广站点':object},index_col=False)
