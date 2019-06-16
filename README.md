@@ -39,6 +39,7 @@ frame=frame.loc[(frame['状态']!='REVOKED')&(frame['状态']!='UNPAID')]~~~多�
 frame=frame[(frame['军团']=='第八军团')|(frame['军团']=='第八军团-AA')]~~~多条件或
 data=data[data['支付方式'].str.contains('转班留存')]~~~单条件包含
 frame=frame[frame['时间']!='合计']~~~不包含某个值
+frame[frame['课程咨询师'].isin(['陈菊花','吴秋柯'])]~~~在某些列表里面
 ```
 ## 函数
 ```python
